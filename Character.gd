@@ -64,7 +64,7 @@ func _on_newPath(id):
 	print("Tposition!")
 	var tile_center_pos = Map.map_to_world(newPosition)
 	print("map!")
-	var newPath = [Vector2(100,100),Vector2(550,550),Vector2(150,150),Vector2(170,170)]
+	var newPath = Nav.get_simple_path(global_position,tile_center_pos) #navigation2D node in tree
 
 	print("newpath!")
 
